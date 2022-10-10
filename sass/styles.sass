@@ -53,6 +53,9 @@
         justify-content: center
         height: 100%
 
+        @include mobile
+            text-align: center
+
         h2
             font-size: 3rem
             @extend %title-text-shadow
@@ -75,7 +78,7 @@
             position: relative
             top: 9.8rem
             display: block
-
+        
 
             .insta
                 @include social-work
@@ -88,11 +91,10 @@
             .lin:hover
                 color: #0072b1
 
-    
             .git
                 @include social-work
                 
-            @include animation            
+            @include animation           
                
 
 
