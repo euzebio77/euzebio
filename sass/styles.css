@@ -131,6 +131,11 @@ li {
   top: 9.8rem;
   display: block;
 }
+@media screen and (max-width: 767px) {
+  #main-banner .title-container .social-works {
+    top: 5rem;
+  }
+}
 #main-banner .title-container .social-works .insta {
   color: #fff;
   padding: 0.5rem;
