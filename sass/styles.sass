@@ -76,6 +76,7 @@
             top: 9.8rem
             display: block
 
+
             .insta
                 @include social-work
             .insta:hover
@@ -93,7 +94,8 @@
                 
             @include animation            
                
-    
+
+
 .services-container
     text-align: center
     padding: 2rem
@@ -108,8 +110,6 @@
         justify-content: space-around
         padding: 2rem  
         
-        @include mobile
-          padding: 2rem 0
 
     .services-card
         width: 30%
@@ -118,6 +118,12 @@
         border: 1px solid #CCC
         transition: .3s 
 
+        @include tablet
+            width: 40%
+
+        @include mobile
+            width: 100%
+        
         .fab.fa-js
             color:#F49F1C
 
@@ -146,6 +152,7 @@
         h3
             font-size: 1.5rem
             margin-bottom: 1rem
+
         p
             color: $text-color
         
@@ -154,10 +161,13 @@
             border: transparent
             box-shadow: 0 1px 10px #ccc
 
+        
+
 footer
     background-color: $footer-bg
     color: $text-color
     padding: 1rem 1rem
+
 
     .footer-copy-right-container
         width: 100%
