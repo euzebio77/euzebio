@@ -94,6 +94,12 @@ li {
 #main-banner .nav-container-navbar li a:hover {
   color: #FF8800;
 }
+@media screen and (max-width: 767px) {
+  #main-banner .nav-container-navbar li a {
+    position: relative;
+    left: 3.4rem;
+  }
+}
 #main-banner .nav-container .fas.fa-bars {
   font-size: 2rem;
   color: #fff;
