@@ -123,6 +123,8 @@ li {
 @media screen and (max-width: 767px) {
   #main-banner .title-container h1 {
     font-size: 3rem;
+    -webkit-animation: none;
+            animation: none;
   }
 }
 #main-banner .title-container h4 {
