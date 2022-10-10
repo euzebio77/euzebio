@@ -55,6 +55,7 @@
 
         @include mobile
             text-align: center
+            
 
         h2
             font-size: 3rem
@@ -65,6 +66,10 @@
             margin-top: 4rem
             transform: translate(0px)
             @extend %title-animation
+
+            @include mobile
+                font-size: 2.5rem
+
             
         h4 
             margin-bottom: -1rem
@@ -96,7 +101,7 @@
             .git
                 @include social-work
                 
-            @include animation           
+            @include animation      
                
 
 
@@ -146,7 +151,6 @@
 
         .fab.fa-sass
             color: #bf4080
-
 
         i
             font-size: 4rem
