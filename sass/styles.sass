@@ -22,6 +22,8 @@
         padding: 1.5rem 2rem
         background-color: $black
         z-index: 10
+        @include mobile
+            justify-content: center
 
         .brand
             color: $light-color
@@ -40,11 +42,7 @@
                 a 
                     color: $light-color
                     @include main-hover
-                    @include mobile
-                        position: relative
-                        left: 3.4rem
                         
-
         .fas.fa-bars
             font-size: 2rem
             color: #fff
