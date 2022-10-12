@@ -130,6 +130,8 @@ li {
     font-size: 3rem;
     -webkit-animation: none;
             animation: none;
+    position: relative;
+    bottom: 2rem;
   }
 }
 #main-banner .title-container h4 {
