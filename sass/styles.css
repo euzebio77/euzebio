@@ -226,6 +226,7 @@ li {
   .services-container .services-card {
     width: 100%;
     flex-direction: column;
+    margin-top: 1rem;
   }
 }
 .services-container .services-card .fab.fa-js {
