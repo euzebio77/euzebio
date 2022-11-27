@@ -60,6 +60,29 @@ li {
   background-position: center;
   background-attachment: fixed;
 }
+#main-banner .nav-container2 {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  background-color: #000;
+  z-index: 10;
+}
+@media screen and (min-width: 1024px) {
+  #main-banner .nav-container2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  #main-banner .nav-container2 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+}
 #main-banner .nav-container {
   display: flex;
   justify-content: space-between;
@@ -73,7 +96,12 @@ li {
 }
 @media screen and (max-width: 767px) {
   #main-banner .nav-container {
-    justify-content: center;
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 866px) {
+  #main-banner .nav-container {
+    display: none;
   }
 }
 @media screen and (max-width: 767px) {
@@ -282,6 +310,11 @@ li {
 }
 
 @media screen and (max-width: 767px) {
+  .conteudo-card {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 866px) {
   .conteudo-card {
     display: none;
   }
