@@ -76,6 +76,16 @@ li {
     justify-content: center;
   }
 }
+@media screen and (max-width: 767px) {
+  #main-banner .nav-container .contato {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #main-banner .nav-container .curriculo {
+    display: none;
+  }
+}
 #main-banner .nav-container .brand {
   color: #fff;
   font-size: 2rem;
@@ -91,6 +101,7 @@ li {
 }
 #main-banner .nav-container-navbar li {
   margin: 5px 10px;
+  position: relative;
 }
 #main-banner .nav-container-navbar li a {
   color: #fff;
@@ -144,6 +155,11 @@ li {
   position: relative;
   top: 9.8rem;
   display: block;
+}
+@media screen and (min-width: 1024px) {
+  #main-banner .title-container .social-works {
+    display: none;
+  }
 }
 @media screen and (max-width: 767px) {
   #main-banner .title-container .social-works {
@@ -263,6 +279,103 @@ li {
 .services-container .services-card:hover {
   border: transparent;
   box-shadow: 0 1px 10px #ccc;
+}
+
+@media screen and (max-width: 767px) {
+  .conteudo-card {
+    display: none;
+  }
+}
+.conteudo-card h1 {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  top: 7rem;
+  color: white;
+  font-size: 2rem;
+}
+.conteudo-card .card-container {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: #444;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial;
+}
+.conteudo-card .card-container .container {
+  width: 1000%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.conteudo-card .card-container .container .card {
+  position: relative;
+}
+.conteudo-card .card-container .container .card .face {
+  width: 300px;
+  height: 200px;
+  transition: 0.4s;
+}
+.conteudo-card .card-container .container .card .face1 {
+  position: relative;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+}
+.conteudo-card .card-container .container .card .face1 .content {
+  transition: 0.5s;
+  text-align: center;
+}
+.conteudo-card .card-container .container .card .face1 .content i {
+  font-size: 3em;
+  color: white;
+  display: inline-block;
+}
+.conteudo-card .card-container .container .card .face1 .content h3 {
+  font-size: 1em;
+  color: white;
+  text-align: center;
+}
+.conteudo-card .card-container .container .card .face1 .content a {
+  transition: 0.5s;
+}
+.conteudo-card .card-container .container .face2 {
+  position: relative;
+  background: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  transform: translateY(-100px);
+}
+.conteudo-card .card-container .container .face2 p {
+  font-size: 11pt;
+  text-align: center;
+  position: relative;
+  top: 45px;
+}
+.conteudo-card .card-container .container .face2 a {
+  position: relative;
+  top: 50px;
+  font-size: 10pt;
+  left: 100px;
+}
+.conteudo-card .card-container .card:hover .face.face1 {
+  transform: translateY(0);
+  box-shadow: inset -20px 0 300px #FF8800, 10px 0 80px #FF8800;
+}
+.conteudo-card .card-container .card:hover .face.face2 {
+  transform: translateY(50);
 }
 
 footer {
