@@ -407,7 +407,9 @@ li {
   position: relative;
   top: 50px;
   font-size: 10pt;
-  left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .conteudo-card .card-container .card:hover .face.face1 {
   transform: translateY(0);
